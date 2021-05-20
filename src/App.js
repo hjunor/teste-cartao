@@ -1,40 +1,27 @@
 import React from 'react';
-import Particles from "react-tsparticles";
-import logo from './logo.svg';
+import Particles from 'react-tsparticles';
 import './App.css';
-import particlesOptions from "./particles.json";
+import HappyBirthday from './Assets/unnamed.png';
+import particlesOptions from './particles.json';
 
 function App() {
-    return (
-        <div className="App">
-            <Particles options={particlesOptions}/>
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo"/>
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <p>
-                    Edit <code>src/particles.json</code> to customize Particles, then save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-                <a
-                    className="App-link"
-                    href="https://particles.js.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    See Particles samples
-                </a>
-            </header>
+  return (
+    <div className="App">
+      <Particles options={particlesOptions} />
+      <div className="card">
+        <img src={HappyBirthday} alt="HappyBirthday" />
+        <div>
+          <h2>Ana Maria</h2>
+          <p>
+            Parabéns! Que o tempo seja sempre o seu melhor parceiro, trazendo
+            equilíbrio e sabedoria que lhe darão a receita ideal para viver a
+            vida, aproveitando o melhor que ela tem a oferecer. Muita saúde,
+            amor, paz, fé, esperança, alegria e prosperidade. Feliz aniversário!
+          </p>
         </div>
-    );
+      </div>
+    </div>
+  );
 }
 
 export default App;

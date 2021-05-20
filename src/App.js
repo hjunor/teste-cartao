@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Particles options={particlesOptions} />
       <div className="card">
-        <img src={HappyBirthday} alt="HappyBirthday" />
+        <img className="rotate" src={HappyBirthday} alt="HappyBirthday" />
         <div>
           <h2>Ana Maria</h2>
           <p>
